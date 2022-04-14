@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Work+Sans:wght@300;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container-fluid mt-2 bg-white"> <!---NAVBAR--->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-family: work sans;">Portfolio Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
+                <ul class="navbar-nav" style="font-family: quicksand;">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="#hobbies">Hobbies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subheading-->
+
+    <header class="bg-secondary bg-gradient text-white py-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3 text-left text-md-center mb-3">
+                    <img class="rounded-rectangle img-fluid" src="images/resumePic.jpg" height="300px" width="200px" alt="Profile Photo" />
+                </div>
+                <div class="col-md-9">
+                    <h1 style="font-family: work sans;">Akarsh Kumar</h1>
+                    <h5>Freelance Web Developer</h5>
+                    <p class="border-top pt-3" style="font-family: quicksand;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio lacus,
+                        sollicitudin in dolor at, consequat volutpat ante. Integer quis consequat turpis, quis porta orci.
+                        Proin tincidunt volutpat faucibus. Suspendisse ac nisl purus suspendisse eleifend interdum orci non
+                        pharetra. </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Carousel-->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/carousel1.jpg" class="d-block w-100" width="800" height="500">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <a href="#about"><h5 type="button" class="btn btn-light mb-5">Go to About</h5></a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/carousel2.jpg" class="d-block w-100" width="800" height="500">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <a href="#resume">
+                        <h5 type="button" class="btn btn-light mb-5">View Resume</h5>
+                    </a>
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/carousel3.jpg" class="d-block w-100" width="800" height="500">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <a href="#contact">
+                        <h5 type="button" class="btn btn-light mb-5">Contact Me</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--About section-->
+    <div class="container-fluid" id="about">
+    <hr class="featurette-divider">
+    <div class="row featurette ">
+        <div class="col-md-7">
+            <h2 class="featurette-heading my-3" style="font-family: work sans;">About - Subheading 1 <span class="text-muted">Catchy Text 1</span>
+            </h2>
+            <p class="lead" style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum asperiores minus autem quaerat explicabo? Atque, dolores quis. Recusandae assumenda voluptatibus ad atque enim perferendis odit sed corrupti distinctio iure. Illo vero dolor excepturi cumque.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto"
+                style="width: 500px; height: 300px;"
+                src="images/about1.jpg">
+        </div>
+    </div>
+    <div class="row featurette my-5">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" style="font-family: work sans;">About - Subheading 2 <span class="text-muted">Catchy Text 2</span></h2>
+            <p class="lead" style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus ullam, ut illum aspernatur nulla deserunt est quisquam repellendus, magni eveniet accusamus itaque quod laborum magnam aliquam, asperiores voluptatibus saepe dolorum recusandae adipisci inventore! Iste!</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto"
+                src="images/about2.jpg" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+    <div class="row featurette my-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading my-3" style="font-family: work sans;">About - Subheading 3 <span class="text-muted">Catchy Text 3</span>
+            </h2>
+            <p class="lead" style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis reprehenderit quos molestiae vitae optio! Reprehenderit earum quam quibusdam fugit iusto tempore consequatur eveniet eaque accusamus, obcaecati distinctio ipsum, quia libero id adipisci! Enim, itaque id?</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 300px;"
+                src="images/about1.jpg">
+        </div>
+    </div>
+    <div class="row featurette my-5">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" style="font-family: work sans;">About - Subheading 4 <span class="text-muted">Catchy Text 4</span></h2>
+            <p class="lead" style="font-family: quicksand;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptatum officiis consequatur molestiae inventore voluptas, ut optio modi voluptatem illo excepturi omnis, alias porro similique id veritatis fuga magnam incidunt delectus ad unde ducimus dolorem.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="images/about2.jpg"
+                data-holder-rendered="true" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <!--Resume Section-->
+
+    <main class="container my-2" id="resume">
+        <div class="row">
+            <div class="col-md mb-5" id="contact">
+                <h2 class="mb-5" style="font-family: work sans;">Contact Information</h2>
+                <ul>
+                    <li>
+                        <h6 class="text-danger">Name</h6>
+                        <p>Akarsh Kumar</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">City / State</h6>
+                        <p>Chennai / Tamil Nadu</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Phone Number</h6>
+                        <p>+91 7091458156</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Email Address</h6>
+                        <p>kumarakarsh3@gmail.com</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Social Media Handles</h6>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="btn btn-light" type="button" target="_blank">Instagram</a></li>
+                            <li><a href="https://twitter.com/__Akarsh__" class="btn btn-light" type="button" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/c0deblooded/" class="btn btn-light" type="button" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/code-blood-ed" class="btn btn-light" type="button" target="_blank">Github</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md mb-5">
+                <h2 class="mb-5" style="font-family: work sans;">Education</h2>
+                <ul>
+                    <li>
+                        <!---YOU CAN ADD ANOTHER LIST FOR DETAILED EXPRESSION-->
+                        <h6 class="text-danger">Stream / University Name and Duration</h6>
+                        <p style="font-family: quicksand;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vel.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Computer Science / SIST 2020-2024</h6>
+                        <p style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vel.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Computer Science / SIST 2020-2024</h6>
+                        <p style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vel.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Computer Science / SIST 2020-2024</h6>
+                        <p style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vel.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md mb-5" id="skills">
+                <h2 class="mb-5" style="font-family: work sans;">Skills</h2>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 95%"
+                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 89%"
+                        aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 87%"
+                        aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 80%"
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">WordPress</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 78%"
+                        aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 77%"
+                        aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 75%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Linux</div>
+                </div>
+                <div class="progress mb-4" style="height:25px;">
+                    <div class="progress-bar bg-success text-left pl-2" role="progressbar" style="width: 65%"
+                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">SEO</div>
+                </div>
+            </div>
+            <div class="col-md">
+                <h2 class="mb-5" style="font-family: work sans;">Project Pictures</h2>
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <a href="#">
+                            <img class="img-fluid img-thumbnail" src="images/projectPic4.png">
+                        </a>
+                    </div>
+                    <div class="col-md mb-3">
+                        <a href="#">
+                            <img class="img-fluid img-thumbnail" src="images/projectPic3.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <a href="#">
+                            <img class="img-fluid img-thumbnail" src="images/projectPic3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md mb-3">
+                        <a href="#">
+                            <img class="img-fluid img-thumbnail" src="images/projectPic4.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md mb-5" id="hobbies">
+                <h2 class="mb-5" style="font-family: work sans;">Hobbies</h2>
+                <ul>
+                    <li>
+                        <h6 class="text-danger">Hobby 1</h6>
+                        </li>
+                    <li>
+                        <h6 class="text-danger">Hobby 2</h6>
+                        </li>
+                    <li>
+                        <h6 class="text-danger">Hobby 3</h6>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Hobby 4</h6>
+                    </li>
+                    <li>
+                        <h6 class="text-danger">Hobby 5</h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md mb-5">
+                <h2 class="mb-5" style="font-family: work sans" >Work Experience</h2>
+                    <ul>
+                        <li>
+                            <h6 class="text-danger">Position / Company name and duration</h6>
+                            <p style="font-family: quicksand;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus illum nam molestias quos.
+                                Consequatur illo dignissimos, maxime officiis voluptatibus at!</p>
+                        </li>
+                        <li>
+                            <h6 class="text-danger">Position / Company name and duration</h6>
+                            <p style="font-family: quicksand;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam in repudiandae exercitationem
+                                numquam eos totam nulla quaerat voluptatem facere atque alias, id natus officiis dolores cum?
+                                Architecto fugit voluptatum modi?</p>
+                        </li>
+                        <li>
+                            <h6 class="text-danger">Position / Company name and duration</h6>
+                            <p style="font-family: quicksand;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima ab dicta labore eligendi
+                                perspiciatis velit enim ullam magni dignissimos impedit odio, praesentium nobis numquam
+                                adipisci. Eligendi beatae velit placeat.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <div class="class container-fluid">
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/__Akarsh__" role="button" target="_blank"><i
+                        class="bi bi-twitter"></i></a>
+    
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role=" button" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+    
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/c0deblooded/"
+                    role="button" target="_blank"><i class="bi bi-linkedin"></i></a>
+    
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/code-blood-ed" role="button"><i
+                        class="bi bi-github" target="_blank"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="#!">www.sampleWebsite.com</a>
+            <br>
+            <a class="text-white" href="index.html">Go to Top</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+    <!-- Including Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
